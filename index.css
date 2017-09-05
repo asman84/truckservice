@@ -1,0 +1,68 @@
+body {
+    font-family: Roboto;
+}
+
+nav {
+    background-color: #0d294c;
+    font-weight: 900;
+    color: #fff;
+    font-size: 20px;
+}
+
+section h2 {
+    font-size: 48px;
+}
+
+.content {
+    margin-top: 100px;
+    text-indent: 40px;
+    text-align: justify;
+    font-size: large;
+    background-color: #717b88;
+    color: #fff;
+    word-spacing: 4px;
+}
+
+.box {
+    box-sizing: border-box;
+    background-image: url("actros2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.forma {
+    float: left;
+    width: 50%;
+    margin-top: 135px;
+}
+
+.praise {
+    float: left;
+    text-align: center;
+    width: 50%;
+    letter-spacing: 1px;
+}
+
+.fillform {
+    background-color: rgba(64, 64, 64, 0.6);
+    border-radius: 0.25rem;
+}
+
+.bg-opacity {
+    border-radius: 0.25rem;
+    background-color: rgba(64, 64, 64, 0.6);
+}
+
+.praise h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.lowprice {
+    color: #f0f0f0;
+}
+
+.intime {
+    color: #4e3e3d;
+}
