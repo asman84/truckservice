@@ -2,8 +2,15 @@ body {
     font-family: Roboto;
 }
 
+.mainPart {
+
+    background-image: url("actros2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav {
-    background-color: #0d294c;
+    background-color: rgba(64, 64, 64, 0.3);
     font-weight: 900;
     color: #fff;
     font-size: 20px;
@@ -13,22 +20,10 @@ section h2 {
     font-size: 48px;
 }
 
-.content {
-    margin-top: 100px;
-    text-indent: 40px;
-    text-align: justify;
-    font-size: large;
-    background-color: #717b88;
-    color: #fff;
-    word-spacing: 4px;
-}
 
-.box {
+.box,
+.contacts-box {
     box-sizing: border-box;
-    background-image: url("actros2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
 }
 
 .forma {
@@ -52,6 +47,7 @@ section h2 {
 .bg-opacity {
     border-radius: 0.25rem;
     background-color: rgba(64, 64, 64, 0.6);
+    margin-top: 45px;
 }
 
 .praise h1 {
@@ -59,10 +55,16 @@ section h2 {
     font-weight: 900;
 }
 
-.lowprice {
-    color: #f0f0f0;
+.contacts h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
 }
 
-.intime {
-    color: #4e3e3d;
+.map-box,
+.contacts-box {
+    /*border: 4px groove rgba(64, 64, 64, 0.7);*/
+    width: 50%;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

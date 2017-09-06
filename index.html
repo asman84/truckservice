@@ -1,74 +1,109 @@
 <html>
 
 <head>
-    <title>Test</title>
+    <title>Truck Service</title>
     <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
     <link rel="stylesheet" href="node_modules/bootstrap4/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap4/js/bootstrap.js">
+    <link rel="stylesheet" href="node_modules/font-awesome-4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <script>
+    function initMap() {
+        var uluru = { lat: 41.304168, lng: 69.235773 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXNmyx47huTXi-0PSOsx-0bxleLs2Hcug&callback=initMap">
+    </script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col col-12 p-0 m-0">
-                <nav class="p-3">
-                    <ul class="list-unstyled d-flex justify-content-end">
-                        <li class="mr-auto ml-4">Firm Name</li>
-                        <li class="mr-5">Цены</li>
-                        <li class="mr-5">Адрес</li>
-                        <li class="mr-5">Каталог</li>
-                        <li class="mr-5">Тел: +(998)-97-111 11-11</li>
-                    </ul>
-                </nav>
-                <div class="box text-white p-5">
-                    <div class="praise">
-                        <div>
-                            <h1 class="">Преимущества нашей компании</h1>
+            <div class="col col-12 p-0 m-0 mainPart">
+                <div class="">
+                    <nav class="p-3">
+                        <ul class="list-unstyled d-flex justify-content-end">
+                            <li class="mr-auto ml-5">Firm Name</li>
+                            <li class="mr-5">О Нас</li>
+                            <li class="mr-5">Каталог</li>
+                            <li class="mr-5">Адрес</li>
+                            <li class="mr-5"><i class="fa fa-phone" aria-hidden="true"></i> : (998)-97-111 11-11
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="box text-white mt-5 p-5">
+                        <div class="praise">
+                            <div>
+                                <h1 class="">Преимущества нашей компании</h1>
+                            </div>
+                            <div class="bg-opacity p-5">
+                                <div class="text-white d-flex align-items-center mt-2">
+                                    <img class="mr-5" src="qualityNew.svg">
+                                    <div class="text-left">
+                                        <h2><b>Гарантия качество</b></h2>
+                                        <h6><b>Наши высококвалифицированные специалисты идеально обработают каждую деталь</b></h6>
+                                    </div>
+                                </div>
+                                <div class="text-white d-flex align-items-center mt-5">
+                                    <img class="mr-5" src="moneyNew.svg">
+                                    <div class="text-left lowprice">
+                                        <h2><b>Низкие цены</b></h2>
+                                        <h6><b>Благодаря оптимизации процессов мы снизили себестоимость</b></h6>
+                                    </div>
+                                </div>
+                                <div class="text-white d-flex align-items-center mt-5">
+                                    <img class="mr-5 bg-dange" src="intimeNew.svg">
+                                    <div class="text-left intime">
+                                        <h2><b>Своевременное выполнение</b></h2>
+                                        <h6><b>В кратчащие сроки выполняем заказы</b></h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="bg-opacity px-4 py-5">
-                            <div class="text-white d-flex align-items-center mt-5">
-                                <img class="mr-5" src="qualityNew.svg">
-                                <div class="text-left">
-                                    <h2><b>Гарантия качество</b></h2>
-                                    <h6><b>Наши высококвалифицированные специалисты идеально обработают каждую деталь</b></h6>
-                                </div>
-                            </div>
-                            <div class="text-white d-flex align-items-center mt-5">
-                                <img class="mr-5" src="moneyNew.svg">
-                                <div class="text-left lowprice">
-                                    <h2><b>Низкие цены</b></h2>
-                                    <h6><b>Благодаря оптимизации процессов мы снизили себестоимость</b></h6>
-                                </div>
-                            </div>
-                            <div class="text-white d-flex align-items-center mt-5">
-                                <img class="mr-5" src="intimeNew.svg">
-                                <div class="text-left intime">
-                                    <h2><b>Своевременное выполнение</b></h2>
-                                    <h6><b>В кратчащие сроки выполняем заказы</b></h6>
-                                </div>
-                            </div>
+                        <div class="forma px-1">
+                            <form class="my-4 ml-5 fillform p-5">
+                                <label for="exampleInputEmail1">Наименование Вашего Организации</label>
+                                <input type="text" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                <label for="exampleInputEmail1">Фамилия Имя Отчество</label>
+                                <input type="text" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                <label for="exampleInputEmail1">Контактный Номер</label>
+                                <input type="text" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="телефон номер">
+                                <label for="exampleInputEmail1">Email адрес вашей компаний</label>
+                                <input type="email" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш email">
+                                <button type="button" class="mt-5 btn btn-dark">отправить</button>
+                            </form>
                         </div>
-                    </div>
-                    <div class="forma px-1">
-                        <form class="my-4 mx-5 fillform p-5">
-                            <label for="exampleInputEmail1">Наименование Вашего Организации</label>
-                            <input type="text" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-                            <label for="exampleInputEmail1">Фамилия Имя Отчество</label>
-                            <input type="text" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-                            <label for="exampleInputEmail1">Контактный Номер</label>
-                            <input type="text" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="телефон номер">
-                            <label for="exampleInputEmail1">Email адрес вашей компаний</label>
-                            <input type="email" class="mb-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш email">
-                            <button type="button" class="btn btn-dark">отправить</button>
-                        </form>
                     </div>
                 </div>
             </div>
+            <div class="col col-12 my-4 p-3 contacts">
+                <h1 class="text-center">Контакты</h1>
+                <div class="d-flex">
+                    <div class="contacts-box py-5 px-3 mt-5 mx-1 d-flex justify-content-between align-items-center">
+                        <img src="amirtemur.jpg">
+                        <div class="ml-2">
+                            <span><b>Компания: </b>Company; <br>
+                        <b>Адрес: </b>00000, ул.Чопонота, <br>15/25-A Офис, 2-этаж <br>
+                        <b>Город: </b>Ташкент <br><b>Контактный тел: </b>(+998)-97-111-11-11 <br><b>E-mail: </b>comapany@name.com</span>
+                        </div>
+                    </div>
+                    <div id="map" class="map-box mt-5 mx-2">MAP</div>
+                </div>
+            </div>
         </div>
+    </div>
 </body>
 
 </html>
