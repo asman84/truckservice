@@ -1,0 +1,84 @@
+body {
+    font-family: Roboto;
+}
+
+.mainPart {
+
+    background-image: url("../img/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    background-color: rgba(64, 64, 64, 0.3);
+    font-weight: 900;
+    color: #fff;
+    font-size: 20px;
+}
+
+section h2 {
+    font-size: 48px;
+}
+
+
+.box,
+.contacts-box {
+    box-sizing: border-box;
+}
+
+.box h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.forma {
+    /*float: left;*/
+    width: 50%;
+    /*margin-top: 135px;*/
+}
+
+.praise {
+    /*float: left;*/
+    text-align: center;
+    /*width: 50%;*/
+    letter-spacing: 1px;
+}
+
+.fillform {
+    background-color: rgba(64, 64, 64, 0.6);
+    border-radius: 0.25rem;
+}
+
+.bg-opacity {
+    border-radius: 0.25rem;
+    background-color: rgba(64, 64, 64, 0.6);
+    width: 50%;
+}
+
+.praise h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+
+
+.contacts-box img {
+    width: 100%;
+}
+
+
+.contacts h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.map-box,
+.contacts-box {
+    /*border: 4px groove rgba(64, 64, 64, 0.7);*/
+    width: 50%;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
