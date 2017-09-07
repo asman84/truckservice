@@ -9,3 +9,11 @@ function initMap() {
         map: map
     });
 }
+
+$("#adress").click(function() {
+    var a = $("#contacts").offset();
+    console.log(a);
+    $("body").animate({
+        scrollTop: a.top
+    }, 800)
+});
